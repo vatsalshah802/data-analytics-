@@ -5,8 +5,8 @@ import pandas as pd
 import plotly.express as px 
 import io
 import time
-
-
+import statsmodels.api as sm
+from scipy import stats
 # set page title and title icon  
 st.set_page_config(
     page_title= "Data Analysis Portal ",
