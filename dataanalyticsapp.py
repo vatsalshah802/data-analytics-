@@ -10,21 +10,19 @@ from scipy import stats
 
 import streamlit as st
 
-
+# Custom CSS to hide GitHub icon
 
 # set page title and title icon  
 st.set_page_config(
     page_title= "Data Analysis Portal ",
     page_icon= '📊'
 )
-
-# Custom CSS to hide GitHub icon
 custom_css = """
     <style>
-    /* Hide GitHub icon */
-    .css-1r0fsf4 {
-        display: none;
-    }
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    github {visibility: hidden;}
+    
     </style>
 """
 
