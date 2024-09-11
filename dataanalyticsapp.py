@@ -7,11 +7,28 @@ import io
 import time
 import statsmodels.api as sm
 from scipy import stats
+
+import streamlit as st
+
+
+
 # set page title and title icon  
 st.set_page_config(
     page_title= "Data Analysis Portal ",
     page_icon= '📊'
 )
+
+# Custom CSS to hide GitHub icon
+custom_css = """
+    <style>
+    /* Hide GitHub icon */
+    .css-1r0fsf4 {
+        display: none;
+    }
+    </style>
+"""
+
+st.markdown(custom_css, unsafe_allow_html=True)
 
 # add title and subheader
 st.title (":blue[Data] :red[Operations] :green[Gateway] 🚥")
