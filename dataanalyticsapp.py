@@ -30,12 +30,6 @@ custom_css = """
 
 st.markdown(custom_css, unsafe_allow_html=True)
 
-st.github_button(
-    account="your_github_account",
-    label="Follow me on GitHub",
-    icon_only=False
-)
-
 # add title and subheader
 st.title (":blue[Data] :red[Operations] :green[Gateway] 🚥")
 st.header(":rainbow[Exploratry Data Analysis]", divider = "rainbow")
