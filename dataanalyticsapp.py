@@ -21,7 +21,9 @@ custom_css = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    GitHub {visibility: hidden;}
+    /* Hide GitHub icon */
+    .css-1r0fsf4 {
+        visibility: none;}
     
     </style>
 """
