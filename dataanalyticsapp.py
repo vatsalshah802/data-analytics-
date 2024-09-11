@@ -22,10 +22,12 @@ custom_css = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+
     </style>
 """
 
 st.markdown(custom_css, unsafe_allow_html=True)
+
 
 # add title and subheader
 st.title (":blue[Data] :red[Operations] :green[Gateway] 🚥")
@@ -145,15 +147,15 @@ if (file!=None):
                 mean_value = df[col].mean()
                 df[col].fillna(mean_value, inplace=True)
 
-            # Fill missing values in categorical columns with the most frequent value
-         #   categorical_cols = df.select_dtypes(include=[object]).columns
-         #   for col in categorical_cols:
-          #      most_frequent_value = df[col].mode()[0]
-           #     df[col].fillna(most_frequent_value, inplace=True)
+        # Fill missing values in categorical columns with the most frequent value
+            categorical_cols = df.select_dtypes(include=[object]).columns
+            for col in categorical_cols:
+                most_frequent_value = df[col].mode()[0]
+                df[col].fillna(most_frequent_value, inplace=True)
 
-           # st.write("DataFrame after filling missing values:")
-           # st.write(df)
-           # st.write((df.isnull().sum().sort_values(ascending=False)))
+            st.write("DataFrame after filling missing values:")
+            st.write(df)
+            st.write((df.isnull().sum().sort_values(ascending=False)))
 
         
 
