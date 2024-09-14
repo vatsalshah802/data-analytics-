@@ -9,6 +9,7 @@ import statsmodels.api as sm
 from scipy import stats
 import streamlit as st
 
+
 # Custom CSS to hide GitHub icon
 
 # set page title and title icon  
@@ -17,8 +18,8 @@ st.set_page_config(
     page_icon= '📊'
 )
 custom_css = """
-   <style>
-   #MainMenu {visibility: hidden;}
+    <style>
+    #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
 
@@ -37,7 +38,6 @@ st.subheader(":green[Understading Of Data]")
 
 # file uploading & file showing
 file = st.file_uploader("Drop csv, excel or json file", type= ["csv", "xlsx","josn"])
-
 
 if (file!=None):
     if(file.name.endswith("csv")):
@@ -275,9 +275,8 @@ if (file!=None):
                     fig = px.sunburst(data_frame=new_df, path=path, values='New_Column', title= f'Sunburst Chart of All Selected Columns.')
                     st.plotly_chart(fig)
         
-    info = st.button("About Website")
-    if info == True:
-
-        st.success('Thank You for Using Our Website...')
-        st.success('More Details : ')
-        st.success('Contact By : Jinal Kachhi - 9974132245 , Vatsal Shah - 8460963180')
+info = st.button("About Website")
+if info == True:
+    st.success('Thank You for Using Our Website...')
+    st.success('More Details : ')
+    st.success('Contact By : Jinal Kachhi - 9974132245 , Vatsal Shah - 8460963180')
