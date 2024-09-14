@@ -1,4 +1,4 @@
-# import main libraries
+    # import main libraries
 import streamlit as st
 import numpy as np 
 import pandas as pd 
@@ -274,8 +274,8 @@ if (file!=None):
                     fig = px.sunburst(data_frame=new_df, path=path, values='New_Column', title= f'Sunburst Chart of All Selected Columns.')
                     st.plotly_chart(fig)
         
-info = st.button("About Website")
-if info == True:
-    st.success('Thank You for Using Our Website...')
-    st.success('More Details : ')
-    st.success('Contact By : Jinal Kachhi - 9974132245 , Vatsal Shah - 8460963180')
+        info = st.button("About Website")
+        if info == True:
+            st.success('Thank You for Using Our Website...')
+            st.success('More Details : ')
+            st.success('Contact By : Jinal Kachhi - 9974132245 , Vatsal Shah - 8460963180')
