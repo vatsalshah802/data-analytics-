@@ -16,16 +16,16 @@ st.set_page_config(
     page_title= "Data Analysis Portal ",
     page_icon= '📊'
 )
-#custom_css = """
-#    <style>
-#    #MainMenu {visibility: hidden;}
-#    footer {visibility: hidden;}
-#    header {visibility: hidden;}
+custom_css = """
+   <style>
+   #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
 
-#    </style>
-#"""
+    </style>
+"""
 
-#st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown(custom_css, unsafe_allow_html=True)
 
 
 # add title and subheader
