@@ -7,9 +7,7 @@ import io
 import time
 import statsmodels.api as sm
 from scipy import stats
-import matplotlib.pyplot as plt
 import streamlit as st
-import seaborn as sns 
 
 # Custom CSS to hide GitHub icon
 
