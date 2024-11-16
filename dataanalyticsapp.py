@@ -276,6 +276,4 @@ if (file!=None):
         
         info = st.button("About Website")
         if info == True:
-            st.success('Thank You for Using Our Website...')
-            st.success('More Details : ')
-            st.success('Contact By : Jinal Kachhi - 9974132245 , Vatsal Shah - 8460963180')
+            st.success('Thank You for Using this Website...')
